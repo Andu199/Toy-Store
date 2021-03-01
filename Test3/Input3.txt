@@ -1,0 +1,22 @@
+addcurrency USD $ 0.82
+listcurrencies
+loadcsv amazon_co-ecommerce_sample.csv
+addcurrency GBP £ 1.10
+loadcsv amazon_co-ecommerce_sample.csv
+setstorecurrency USD
+savecsv store_prices_usd.csv
+savestore
+showproduct 79e16a6819d997b7053a808a79d341b8
+addiscount PERCENTAGE 30 "30% Back to School"
+addiscount PERCENTAGE 10 "10% OCT10"
+applydiscount PERCENTAGE 30
+applydiscount PERCENTAGE 10
+showproduct 79e16a6819d997b7053a808a79d341b8
+calculatetotal eac7efa5dbd3d667f26eb3d3ab504464 e12b92dbb8eaee78b22965d2a9bbbd9f
+loadstore
+showproduct 79e16a6819d997b7053a808a79d341b8
+listdiscounts
+listproducts
+exit
+
+

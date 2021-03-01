@@ -1,0 +1,50 @@
+listcurrencies
+getstorecurrency
+addcurrency USD $ 0.82
+addcurrency GBP £ 1.10
+listcurrencies
+getstorecurrency
+setstorecurrency GBP
+loadcsv amazon_co-ecommerce_sample.csv
+applydiscount PERCENTAGE 50
+addiscount PERCENTAGE 5 "5% Black Friday"
+listdiscounts
+savestore
+applydiscount PERCENTAGE 5
+listproducts
+listmanufacturers
+listproductsbymanufacturarer Faller
+listproductsbymanufacturarer Not Available
+updateparity GBP 1.11
+listcurrencies
+setstorecurrency USD
+calculatetotal 21ac3b927d42e0ca97da1384e6221b50 a8ce4d3554cbd6a3cee7d07169662805
+savecsv store_prices_usd_discount_5.csv
+loadstore
+calculatetotal 21ac3b927d42e0ca97da1384e6221b50 a8ce4d3554cbd6a3cee7d07169662805
+listproducts
+savecsv store_prices_gbp.csv
+applydiscount PERCENTAGE 5
+showproduct 21ac3b927d42e0ca97da1384e6221b50
+savecsv store_prices_gbp_discount_5.csv
+listproductsbymanufacturarer Piko
+addiscount FIXED 10 "-10GBP Newsletter"
+listdiscounts
+applydiscount FIXED 10
+loadstore
+listcurrencies
+updateparity GBP 1.11
+getstorecurrency
+setstorecurrency EUR
+getstorecurrency
+savecsv store_prices_eur.csv
+addiscount PERCENTAGE 10 "10% Christmas Discount"
+listdiscounts
+applydiscount PERCENTAGE 10
+listproducts
+calculatetotal 21ac3b927d42e0ca97da1384e6221b50 a8ce4d3554cbd6a3cee7d07169662805
+savecsv store_prices_eur_discount_10.csv
+updateparity USD 0.85
+setstorecurrency USD
+listproducts
+exit

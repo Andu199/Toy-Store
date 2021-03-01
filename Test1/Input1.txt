@@ -1,0 +1,10 @@
+addcurrency GBP £ 1.10
+listcurrencies
+setstorecurrency GBP
+loadcsv amazon_co-ecommerce_sample.csv
+listproductsbymanufacturarer 50Fifty
+addiscount PERCENTAGE 10 "10% Black Friday"
+listdiscounts
+applydiscount PERCENTAGE 10
+listproducts
+exit

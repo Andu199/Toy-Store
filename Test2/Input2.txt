@@ -1,0 +1,15 @@
+listcurrencies
+addcurrency GBP £ 1.10
+loadcsv amazon_co-ecommerce_sample.csv
+savestore
+savecsv store_prices_eur.csv
+setstorecurrency GBP
+savecsv store_prices_gbp.csv
+listmanufacturers
+listproductsbymanufacturarer Hornby
+addiscount FIXED 5 "-5 Black Friday"
+applydiscount FIXED 5
+listproducts
+loadstore
+calculatetotal b17540ef7e86e461d37f3ae58b7b72ac e12b92dbb8eaee78b22965d2a9bbbd9f
+quit
